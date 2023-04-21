@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { AccountComponent } from './account/account.component';
 import { NewAccountComponent } from './new-account/new-account.component';
-import { LoggingService } from './logging.service';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, AccountComponent, NewAccountComponent ],
-  bootstrap:    [ AppComponent ],
-  // providers:[LoggingService]
+  imports: [BrowserModule, FormsModule],
+  declarations: [
+    AppComponent,
+    HelloComponent,
+    AccountComponent,
+    NewAccountComponent,
+  ],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
